@@ -8,6 +8,10 @@
 
 # ID3 tag music genres are surprisingly specific.
 
+# artists = Artist.create!([{name: "AFI"}, {name: "Outkast"}, {name: "TTNG"}])
+# songs = Song.create!([{title: "Totalimmortal"}, {title: "Heya"}, {title: "Chinchilla"}])
+# notes = Note.create!({content: "song info 1"}, {content: "song info 2"}, {content: "song info 3"})
+
 genres = Hash[[
   "Blues",
   "Classic Rock",
@@ -158,5 +162,6 @@ genres = Hash[[
   "JPop",
   "Synthpop"
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
+
 
 
